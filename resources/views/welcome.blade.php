@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" ng-app="myApp">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +12,11 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body>
-        <h1>Technest India</h1>
+    <body ng-controller="homeController as home">
+            <section >
+                <h4>@{{home.name}}</h4>
+            </section>
+
 
         <script src="{{ mix('js/app.js') }}" defer></script>
     </body>
