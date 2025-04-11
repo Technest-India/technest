@@ -19,8 +19,10 @@
         "sass-loader": "^16.0.5"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.8",
         "angular": "^1.8.3",
         "bootstrap": "^5.3.5",
+        "bootstrap-icons": "^1.11.3",
         "jquery": "^3.7.1"
     }
 }
