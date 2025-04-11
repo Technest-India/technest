@@ -1,4 +1,5 @@
+import 'bootstrap';
+import '@popperjs/core';
 require('angular');
-import './bootstrap';
 window.$ = require('jquery');
 require("./appHomeController");

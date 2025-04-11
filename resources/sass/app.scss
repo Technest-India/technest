@@ -1,6 +1,38 @@
 @import 'bootstrap';
+@import 'bootstrap-icons';
+
+$primary-color: #8859f7;
+$bs-accordion-btn-icon-width: 15px !important;
+$dark : #000000;
+$hover-color: #4f4444ba;
 
 body {
-  background-color: #49ee3a;
   font-family: 'Nunito', sans-serif;
+}
+
+.bg-primary{
+    background-color: $primary-color !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.text-primary{
+    color: $primary-color !important;
+}
+
+.hoverBlock{
+    &:hover{
+        color: $hover-color !important;
+    }
+}
+
+.nav-part{
+    .active{
+        &:hover{
+            color: $dark !important;
+        }
+        color: $dark !important;
+    }
 }

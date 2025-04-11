@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" ng-app="myApp">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
+        @yield("meta")
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body ng-controller="homeController as home">
-            <section >
-                <h4>@{{home.name}}</h4>
-            </section>
-
-
-        <script src="{{ mix('js/app.js') }}" defer></script>
+    <body ng-controller="homeController as home" class="container-fluid">
+        @yield('content')
+        @yield('script')
     </body>
 </html>
