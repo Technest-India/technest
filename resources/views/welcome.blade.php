@@ -4,7 +4,7 @@
         @yield("meta")
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body ng-controller="homeController as home" class="container-fluid">
+    <body ng-controller="homeController as home">
         @yield('content')
         @yield('script')
     </body>
