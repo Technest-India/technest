@@ -30,5 +30,116 @@ app.controller('homeController',['$http',function($http){
             behavior: 'smooth'
         });
         revealElements();
+    };
+    
+    home.searchCategoryList = [];
+    home.homeCategoryList = [
+        {
+            id : 1,
+            title : "Home",
+            url : "/home",
+            backgroundColor : "#D8EAD1",
+            lists : [
+                {
+                    name : "Bull/Sell",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/property-lawyer.webp"
+                },
+                {
+                    name : "Rent",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/home-rent.webp"
+                },
+                {
+                    name : "Relocate",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/modular-kitchen.webp"
+                },
+                {
+                    name : "Interiors",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/interior-services.webp"
+                },
+            ]
+        },
+        {
+            id : 2,
+            title : "Education",
+            url : "/eduction",
+            backgroundColor : "#FFE4D3",
+            lists : [
+                {
+                    name : "Playscholls",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/playschool.webp"
+                },
+                {
+                    name : "Schools",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/school.webp"
+                },
+                {
+                    name : "School Tuitions",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/entrance-exam-coaching.webp"
+                },
+                {
+                    name : "Colleges",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/job-training.webp"
+                },
+            ]
+        },
+        {
+            id : 3,
+            title : "Service",
+            url : "/service",
+            backgroundColor : "#F7EAD2",
+            lists : [
+                {
+                    name : "Cleaning",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/home-cleaning.webp"
+                },
+                {
+                    name : "Loans",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/personal-loan.webp"
+                },
+                {
+                    name : "Security",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/security-guard.webp"
+                },
+                {
+                    name : "Pest Control",
+                    link : "/",
+                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/pest-control.webp"
+                },
+            ]
+        }
+    ]
+
+    home.popuplarCategoryList = [
+        {
+            title : "Web Development",
+            uel : "/web-development"
+        },
+        {
+            title : "App Developemnt",
+            url : "/app-development"
+        },
+        {
+            title : "CCTV Install",
+            url : "/cctv-install"
+        },
+        {
+            title : "Computer Service",
+            url : "/computer"
+        }
+    ]
+
+    home.viewCategory = (category) => {
+        window.open(window.location.origin+'/'+category.url, '_blank');
     }
 }]);
