@@ -116,12 +116,12 @@ body {
 }
 
 .text-primary {
-    color: #3563E9 !important;
+    color: $primary-color !important;
 }
 
 .bg-primary, .btn-primary {
-    background-color: #3563E9 !important;
-    border-color: #3563E9 !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
 }
 
 .btn-primary:hover {
@@ -130,8 +130,8 @@ body {
 }
 
 .btn-outline-primary {
-    color: #3563E9 !important;
-    border-color: #3563E9 !important;
+    color: $primary-color !important;
+    border-color: $primary-color !important;
 }
 .btn-outline-primary:hover {
     background-color: rgba(53, 99, 233, 0.1) !important;
@@ -143,7 +143,7 @@ body {
     background-color: #3fe1b0 !important;
 }
 .gradient-text {
-    background: linear-gradient(90deg, #3563E9, #3fe1b0);
+    background: linear-gradient(90deg, $primary-color, #3fe1b0);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -189,7 +189,7 @@ body {
     }
 }
 .card:hover .service-icon {
-    background-color: #3563E9;
+    background-color: $primary-color;
     color: white !important;
 }
 .card:hover .service-icon i {
@@ -208,7 +208,7 @@ body {
     transform: scale(1.05);
 }
 .form-control:focus {
-    border-color: #3563E9;
+    border-color: $primary-color;
     box-shadow: 0 0 0 0.25rem rgba(53, 99, 233, 0.25);
 }
 .social-icons a {
@@ -216,7 +216,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #3563E9 !important;
+    color: $primary-color !important;
 }
 .btn-lg {
     font-weight: 500;
