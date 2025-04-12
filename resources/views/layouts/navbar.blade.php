@@ -1,4 +1,4 @@
-<nav class="navbar bg-primary">
+<nav class="navbar bg-primary drop-showdow sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"

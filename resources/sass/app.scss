@@ -1,13 +1,22 @@
 @import 'bootstrap';
 @import 'bootstrap-icons';
 
-$primary-color: #8859f7;
+$primary-color: #2B2D5B;
 $bs-accordion-btn-icon-width: 15px !important;
 $dark : #000000;
-$hover-color: #4f4444ba;
+$hover-color: #F3F4F6;
+$drop-showdow: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
+$gradient-from : #210330;
+$gradient-to: #2b2d5b;
+$gradient-show: $gradient-from, $gradient-to;
+$focus-color: #ff8a00;
 
 body {
   font-family: 'Nunito', sans-serif;
+}
+
+.drop-showdow{
+    filter: $drop-showdow !important;
 }
 
 .bg-primary{
@@ -35,4 +44,16 @@ body {
         }
         color: $dark !important;
     }
+}
+
+.gradient-top-bottom{
+    background-image: linear-gradient(to bottom, $gradient-show);
+}
+
+.background-top-section{
+    height: 385px;
+}
+
+.text-focus{
+    color: $focus-color;
 }
