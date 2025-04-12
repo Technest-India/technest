@@ -20,10 +20,10 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <a href="/app-development" class="d-block text-decoration-none text-dark" target="_blank" rel="App Development">App Development</a>
-                            <a href="/web-development" class="d-block text-decoration-none text-dark" target="_blank" rel="Web Development">Web Development</a>
-                            <a href="/cctv-install" class="d-block text-decoration-none text-dark" target="_blank" rel="Web Development">CCTV Installation</a>
-                            <a href="/computer" class="d-block text-decoration-none text-dark" target="_blank" rel="" rel="Web Development">Computer</a>
+                            <a href="/app-development" class="d-block text-decoration-none text-dark" rel="App Development">App Development</a>
+                            <a href="/web-development" class="d-block text-decoration-none text-dark" rel="Web Development">Web Development</a>
+                            <a href="/cctv-install" class="d-block text-decoration-none text-dark" rel="Web Development">CCTV Installation</a>
+                            <a href="/computer" class="d-block text-decoration-none text-dark" rel="" rel="Web Development">Computer</a>
                         </div>
                     </div>
                 </div>
