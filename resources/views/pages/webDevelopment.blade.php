@@ -24,7 +24,7 @@
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3">
               {{-- <a href="#contact" class="btn btn-primary btn-lg px-4 py-3">Get a Free Quote</a> --}}
-              <a href="" class="btn btn-outline-primary btn-lg px-4 py-3" ng-click="home.movetoprotfolio()">See Our Work</a>
+              <a href="" class="btn btn-primary btn-lg px-4 py-3" ng-click="home.movetoprotfolio()">See Our Work</a>
             </div>
           </div>
           <div class="col-lg-6 reveal fade-right">
@@ -163,6 +163,8 @@
         </div>
       </div>
     </section>
+
+    @include('layouts.footer')
 @endsection
 
 @section('script')
