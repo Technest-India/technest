@@ -1,9 +1,8 @@
 <nav class="navbar bg-primary drop-showdow sticky-top">
     <div class="container">
         <a class="navbar-brand" href="/">
-            {{-- <img src="/images/logo3.png" alt="Logo" width="90"
-                height="40" class="d-inline-block align-text-top"> --}}
-            {{-- <span class="text-white">Technestindia</span> --}}
+            <img src="/images/technestIndia.png" alt="Logo" width="110"
+                height="40" class="d-inline-block align-text-top">
         </a>
         <div class="nav-part">
             <div class="d-flex align-items-center gap-4 text-white nav">
