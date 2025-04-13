@@ -40,15 +40,15 @@
         </div>
         <div class="col-md-4 col-lg-4">
           <h5 class="mb-4">Contact Info</h5>
-            <div>
-                <div>
+            <div class="mb-3">
+                <div class="d-flex align-content-center gap-2">
                    @include('layouts.phone')
                     <span>Phone</span>
                 </div>
                 <span>8610508846</span>
             </div>
             <div>
-                <div>
+                <div class="d-flex align-content-center gap-2">
                    @include('layouts.email')
                     <span>Email</span>
                 </div>
@@ -59,8 +59,8 @@
       </div>
       <hr class="my-4 bg-secondary">
       <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p class="text-white-50 mb-0">© 2025 Technest. All rights reserved.</p>
+        <div class="text-center">
+          <p class="text-white-50 mb-0 text-center">© 2025 Technest. All rights reserved.</p>
         </div>
         {{-- <div class="col-md-6 text-center text-md-end">
           <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
