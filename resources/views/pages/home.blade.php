@@ -20,8 +20,8 @@
                     </div>
                     <div class="position-relative">
                         <p class="text-focus fw-bold p-0 m-0 fs-4">Skilled, Trusted, Reliable!</p>
-                        <img alt="" width="100" height="6" decoding="async" data-nimg="1"
-                            src="https://sulcdn.azureedge.net/content/images/sulekha-home/v1/skIconBrushOrange.svg">
+                        <img alt="" width="100" height="6" class=""
+                            src="/images/brushfocus.svg">
                     </div>
                 </div>
                 <div class="search-section mx-auto w-100 dropdown">
@@ -57,7 +57,7 @@
                 <ul class="d-flex align-items-center list-container pt-4 pb-4">
                     <li class="d-flex align-items-center flex-wrap flex-column cursor-pointer" ng-repeat="list in category.lists track by $index">
                         <a title="@{{ link.name }}" href="@{{ list.link }}" class="d-flex flex-column align-items-center cursor-pointer text-decoration-none text-black">
-                            <img ng-src="@{{ list.image }}" height="50" width="50" class="duration-300 img-fluid category-image" alt="Business Categories">
+                            <img ng-src="@{{ list.image }}" height="50" width="50" class="duration-300 img-fluid category-image margin-bottom-5px" alt="Business Categories">
                             <div class="font-13px text-center d-flex justify-content-between link-title">
                                 @{{ list.name }}
                             </div>
@@ -74,6 +74,7 @@
         </div>
 
     </section>
+    @include('layouts.footer')
 @endsection
 
 @section('script')

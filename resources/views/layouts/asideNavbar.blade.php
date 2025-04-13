@@ -1,5 +1,5 @@
 <div class="asideNavbar-section">
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header asideNavbar-top-section border-bottom p-3 d-flex align-content-center justify-content-between py-2">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Features</h5>
             <div class="cursor-pointer d-flex align-items-center" class="btn-close" data-bs-dismiss="offcanvas"
