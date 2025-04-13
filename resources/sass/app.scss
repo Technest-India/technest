@@ -360,7 +360,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
-    // margin-bottom: 50px;
+    margin-bottom: 50px;
     li{
         -webkit-box-flex: 4;
         -ms-flex: 4 0 16.6666666667%;
@@ -369,6 +369,12 @@ body {
         text-align: center;
         margin-right: 30px;
         margin-left: 0;
+        &.current{
+            a{
+                background: #2B2D5B;
+                color: white;
+            }
+        }
         a{
             display: block;
             color: #292a2c;
