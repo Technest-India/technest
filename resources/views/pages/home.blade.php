@@ -30,13 +30,16 @@
                         <input type="text" class="form-control form-input" placeholder="Find your service" ng-model="home.searchCategoryName">
                     </div>
                     <div class="dropdown-menu w-100">
-                        <div class="search-show" ng-if="home.searchCategoryName">No Result</div>
+                        <div class="search-show px-3 pb-1 text-dark-emphasis" ng-if="home.checkSearch()">No Result</div>
                         <div class="recent-search-list" ng-if="home.searchCategoryList.length">
-                            <div class="search-show"></div>
+                            <div class="search-show px-3 pb-1 text-dark-emphasis">Recent Searches</div>
+                            <div  class="dropdown-item py-2 cursor-pointer" ng-repeat="search in home.searchCategoryList track by $index" ng-click="home.viewCategory(search);">
+                                @{{search.title}}
+                            </div>
                         </div>
                         <div class="popuplar-list">
                             <div class="search-show px-3 pb-1 text-dark-emphasis">Popular Catogories</div>
-                            <div class="dropdown-item py-2" ng-repeat="category in home.popuplarCategoryList track by $index" ng-click="home.viewCategory(category);">
+                            <div class="dropdown-item py-2 popuplarCatogoryList" ng-repeat="category in home.popuplarCategoryList | filter : home.searchCategoryName track by $index" ng-click="home.viewCategory(category);">
                                 @{{category.title}}
                             </div>
                         </div>

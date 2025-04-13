@@ -8,8 +8,11 @@
         <div class="nav-part">
             <div class="d-flex align-items-center gap-4 text-white nav">
                 <div class="cursor-pointer">
-                    <a class="text-decoration-none text-white {{ request()->route()->uri == 'about' ? 'active' : ''}}" aria-current="page" href="/about">About</a>
+                    <a class="text-decoration-none text-white {{ request()->route()->uri == '/' ? 'active' : ''}}" aria-current="page" href="/">Home</a>
                 </div>
+                {{-- <div class="cursor-pointer">
+                    <a class="text-decoration-none text-white {{ request()->route()->uri == 'about' ? 'active' : ''}}" aria-current="page" href="/about">About</a>
+                </div> --}}
                 <div class="cursor-pointer">
                     <a class="text-decoration-none text-white {{ request()->route()->uri == 'contact-us' ? 'active' : '' }}" aria-current="page" href="/contact-us">Contact Us</a>
                 </div>
