@@ -173,4 +173,14 @@ app.controller('homeController',['$http',function($http){
         }
     });
 
+    $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+    home.appDevWorkprocess = (event)=>{
+        var tab = $(event.currentTarget).closest('.tab'),
+        index = $(event.currentTarget).closest('li').index();
+        tab.find('ul.tabs > li').removeClass('current');
+        $(event.currentTarget).closest('li').addClass('current');
+        tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+        tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+        event.preventDefault();
+    }
 }]);

@@ -135,8 +135,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #2952d8 !important;
-    border-color: #2952d8 !important;
+    background-color: $primary-color !important;
+    border-color:$primary-color !important;
 }
 
 .btn-outline-primary {
@@ -199,7 +199,7 @@ body {
     }
 }
 .card:hover .service-icon {
-    background-color: $primary-color;
+    background-color: white;
     color: white !important;
 }
 .card:hover .service-icon i {
@@ -344,6 +344,109 @@ body {
             border-bottom-right-radius: 0 !important;
             border-right: none !important;
             border-left: none !important;
+        }
+    }
+    #services{
+        padding-top: unset !important;
+    }
+    #process{
+        .design-stage{
+            height: 81px;
+        }
+        padding-top: unset !important;
+        // .container{
+        //     margin-right: unset;
+        // }
+        .tab{
+            ul{
+                margin-bottom:25px;
+            }
+        }
+        .tab_content{
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 3px;
+            }
+        }
+    }
+
+}
+
+.social-icons{
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.tabs{
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-bottom: 50px;
+    li{
+        -webkit-box-flex: 4;
+        -ms-flex: 4 0 16.6666666667%;
+        flex: 4 0 16.6666666667%;
+        max-width: 23.666667%;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 0;
+        a{
+            display: block;
+            color: #292a2c;
+            background: #ffff;
+            font-size: 17px;
+            font-weight: 700;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 3px;
+            box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+            text-decoration: none;
+        }
+    }
+}
+.tab-list{
+    li{
+        padding-bottom: 10px;
+    }
+    ul{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 365px) {
+    .tab{
+        ul{
+            margin-bottom: 40px;
+        }
+        .tabs{
+            li{
+                width: 100%;
+                flex: unset;
+                max-width: unset;
+                margin-right: unset;
+                padding-top: 15px;
+            }
+        }
+        .tab_content{
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 3px;
+            }
+        }
+        .design-stage{
+            height: 81px;
         }
     }
 }
