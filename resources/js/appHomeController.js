@@ -35,57 +35,57 @@ app.controller('homeController',['$http',function($http){
     home.homeCategoryList = [
         {
             id : 1,
-            title : "Home",
-            url : "/home",
+            title : "Web Development",
+            url : "/web-development",
             backgroundColor : "#D8EAD1",
             lists : [
                 {
-                    name : "Bull/Sell",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/property-lawyer.webp"
+                    name : "UI/UX Design",
+                    link : "/web-development",
+                    image : "/images/ui-ux-design.jpg"
                 },
                 {
-                    name : "Rent",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/home-rent.webp"
+                    name : "E-Commerce Solutions",
+                    link : "/web-development",
+                    image : "/images/web_development_main_image.png"
                 },
                 {
-                    name : "Relocate",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/modular-kitchen.webp"
+                    name : "SEO Optimization",
+                    link : "/web-development",
+                    image : "/images/seo.jpg"
                 },
                 {
-                    name : "Interiors",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/interior-services.webp"
+                    name : "Database & data management",
+                    link : "/web-development",
+                    image : "/images/database.jpg"
                 },
             ]
         },
         {
             id : 2,
-            title : "Education",
-            url : "/eduction",
+            title : "App Development",
+            url : "/app-development",
             backgroundColor : "#FFE4D3",
             lists : [
                 {
-                    name : "Playscholls",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/playschool.webp"
+                    name : "iOs Development",
+                    link : "/app-development",
+                    image : "/images/ios-development.jpg"
                 },
                 {
-                    name : "Schools",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/school.webp"
+                    name : "Android Development",
+                    link : "/app-development",
+                    image : "/images/android-development.png"
                 },
                 {
-                    name : "School Tuitions",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/entrance-exam-coaching.webp"
+                    name : "Cross-Platform Apps",
+                    link : "/app-development",
+                    image : "/images/cross-platform-app.png"
                 },
                 {
-                    name : "Colleges",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/job-training.webp"
+                    name : "App Marketing",
+                    link : "/app-development",
+                    image : "/images/app-marketing.jpg"
                 },
             ]
         },
@@ -96,25 +96,25 @@ app.controller('homeController',['$http',function($http){
             backgroundColor : "#F7EAD2",
             lists : [
                 {
-                    name : "Cleaning",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/home-cleaning.webp"
+                    name : "CCTV Install",
+                    link : "/cctv-install",
+                    image : "/images/cctv-install.jpg"
                 },
                 {
-                    name : "Loans",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/personal-loan.webp"
+                    name : "Computer",
+                    link : "/computer",
+                    image : "/images/computer.jpg"
                 },
                 {
-                    name : "Security",
+                    name : "Billing Software",
                     link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/security-guard.webp"
+                    image : "/images/billing-service.png"
                 },
-                {
-                    name : "Pest Control",
-                    link : "/",
-                    image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/pest-control.webp"
-                },
+                // {
+                //     name : "Pest Control",
+                //     link : "/",
+                //     image : "https://sulcdn.azureedge.net/content/images/sulekha-home/v1/pest-control.webp"
+                // },
             ]
         }
     ]
