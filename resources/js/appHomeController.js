@@ -183,4 +183,40 @@ app.controller('homeController',['$http',function($http){
         tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
         event.preventDefault();
     }
+
+    home.sendMail = async (event)=>{
+        var form = document.getElementById("contactForm");
+        const status = document.getElementById('status');
+        event.preventDefault();
+        const formData = new FormData(form);
+        const action ="https://formspree.io/f/xeoandry"
+
+        try {
+            const response = await fetch(action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+
+            if (response.ok) {
+              status.innerHTML = "Thanks for your message!";
+              form.reset();
+              setTimeout(()=>{
+                status.innerHTML = '';
+              },5000)
+            } else {
+              const data = await response.json();
+              if (data.errors) {
+                status.innerHTML = data.errors.map(error => error.message).join(", ");
+              } else {
+                status.innerHTML = "Oops! Something went wrong.";
+              }
+            }
+          } catch (error) {
+            status.innerHTML = "Oops! There was a problem submitting your form.";
+        }
+    }
+
 }]);
