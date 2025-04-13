@@ -79,6 +79,10 @@ body {
 //     color: $primary-color !important;
 // }
 
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
 .object-fit-cover{
     object-fit: cover !important;
 }
@@ -90,6 +94,12 @@ body {
 .hoverBlock {
     &:hover {
         color: $hover-color !important;
+    }
+}
+
+.hoverBg {
+    &:hover {
+        background-color: $hover-color !important;
     }
 }
 
@@ -223,7 +233,6 @@ body {
 }
 
 .search-section {
-
     max-width: 768px;
     .search-form {
         position: relative;
@@ -314,6 +323,27 @@ body {
         .list-container{
             flex-direction: column !important;
             gap: 16px !important;
+        }
+    }
+}
+
+.asideNavbar-section{
+    .asideNavbar-listing-section{
+        .accordion-item{
+            border-top-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-right: none !important;
+            border-left: none !important;
+        }
+        .accordion-button{
+            border-top-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border-top-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-right: none !important;
+            border-left: none !important;
         }
     }
     #services{
@@ -419,6 +449,4 @@ body {
             height: 81px;
         }
     }
-
-
 }

@@ -32,7 +32,6 @@ app.controller('homeController',['$http',function($http){
         revealElements();
     };
 
-    home.searchCategoryList = [];
     home.homeCategoryList = [
         {
             id : 1,
@@ -123,7 +122,7 @@ app.controller('homeController',['$http',function($http){
     home.popuplarCategoryList = [
         {
             title : "Web Development",
-            uel : "/web-development"
+            url : "/web-development"
         },
         {
             title : "App Developemnt",
@@ -139,12 +138,43 @@ app.controller('homeController',['$http',function($http){
         }
     ]
 
-    home.viewCategory = (category) => {
-        window.open(window.location.origin+'/'+category.url, '_blank');
+    home.viewCategory = (obj) => {
+        if(localStorage.hasOwnProperty('recentCatrgies')){
+            var index = home.searchCategoryList.findIndex(c => c.title == obj);
+            var category = JSON.parse(localStorage.getItem('recentCatrgies'));
+            if(index > -1){
+                category.splice(index,1);
+            }
+            category.unshift(obj);
+        }else{
+            var category = [obj];
+        }
+        localStorage.setItem('recentCatrgies',JSON.stringify(category));
+        window.location.href = window.location.origin+obj.url;
     }
 
+    home.checkSearch = () => {
+        return $(".popuplarCatogoryList").length >= 1 ? false : true;
+    }
+
+    (()=>{
+        if(localStorage.hasOwnProperty('recentCatrgies')){
+            home.searchCategoryList = JSON.parse(localStorage.getItem('recentCatrgies'));
+        }else{
+            home.searchCategoryList = [];
+        }
+    })();
+
+    window.addEventListener('popstate',()=>{
+        if(localStorage.hasOwnProperty('recentCatrgies')){
+            home.searchCategoryList = JSON.parse(localStorage.getItem('recentCatrgies'));
+        }else{
+            home.searchCategoryList = [];
+        }
+    });
+
     $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-   home.appDevWorkprocess = (event)=>{
+    home.appDevWorkprocess = (event)=>{
         var tab = $(event.currentTarget).closest('.tab'),
         index = $(event.currentTarget).closest('li').index();
         tab.find('ul.tabs > li').removeClass('current');
@@ -152,5 +182,5 @@ app.controller('homeController',['$http',function($http){
         tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
         tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
         event.preventDefault();
-   }
+    }
 }]);
