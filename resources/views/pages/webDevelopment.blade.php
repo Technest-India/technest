@@ -44,7 +44,7 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="100">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="50">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
@@ -57,7 +57,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="150">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="100">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
@@ -70,7 +70,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="200">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="150">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="300">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="200">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
@@ -96,7 +96,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="400">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="250">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
@@ -109,7 +109,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="500">
+          <div class="col-md-6 col-lg-4 reveal fade-up" data-delay="300">
             <div class="card h-100 border-0 shadow-sm hover-card">
               <div class="card-body p-4 text-center">
                 <div class="service-icon mb-4">
