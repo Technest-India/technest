@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "axios": "^1.1.2",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "postcss-loader": "^8.1.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.86.3",
+        "sass-loader": "^16.0.5"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "angular": "^1.8.3",
+        "bootstrap": "^5.3.5",
+        "bootstrap-icons": "^1.11.3",
+        "jquery": "^3.7.1"
+    }
+}
