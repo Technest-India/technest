@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
-
+// Main Route file
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 
 Route::get('/', function (Request $request) {
     return view('pages.home');
