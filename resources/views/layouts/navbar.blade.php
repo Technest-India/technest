@@ -1,7 +1,7 @@
 <nav class="navbar bg-primary drop-showdow sticky-top">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="/images/technestIndia.png" alt="Logo" width="110"
+            <img src="/images/mainlogo.png" alt="Logo" width="110"
                 height="40" class="d-inline-block align-text-top">
         </a>
         <div class="nav-part">

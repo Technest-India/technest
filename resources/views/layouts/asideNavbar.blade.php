@@ -11,7 +11,19 @@
             <div class="w-100 p-2 hoverBg">
                 <a href="/contact-us" class="d-block text-decoration-none text-dark">Contact Us</a>
             </div>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="w-100 p-2 hoverBg">
+                <a href="/app-development" class="d-block text-decoration-none text-dark" rel="App Development">App Development</a>
+            </div>
+            <div class="w-100 p-2 hoverBg">
+                <a href="/web-development" class="d-block text-decoration-none text-dark" rel="Web Development">Web Development</a>
+            </div>
+            <div class="w-100 p-2 hoverBg">
+                <a href="/cctv-install" class="d-block text-decoration-none text-dark" rel="Web Development">CCTV Installation</a>
+            </div>
+            <div class="w-100 p-2 hoverBg">
+                <a href="/computer" class="d-block text-decoration-none text-dark"    rel="Web Development">Computer</a>
+            </div>
+            {{-- <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed d-flex align-items-center p-2 py-2 gap-2" type="button"
@@ -32,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 

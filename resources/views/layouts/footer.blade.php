@@ -3,7 +3,7 @@
       <div class="row g-4">
         <div class="col-lg-4">
           <h3 class="h4 mb-4">
-            <span class="text-primary">Tech</span><span class="text-info">Nest</span>
+            <span class="" style="color: #ff8a00 !important">Tech</span><span class="margin-3px" style="color:green">Nest</span>
           </h3>
           <p class="mb-4 text-white-50">
             Creating exceptional digital experiences for businesses of all sizes. Our team of experts is dedicated to delivering high-quality web solutions.
@@ -47,13 +47,21 @@
                 </div>
                 <span>8610508846</span>
             </div>
-            <div>
+            <div class="mb-3">
                 <div class="d-flex align-content-center gap-2">
                    @include('layouts.email')
                     <span>Email</span>
                 </div>
                 <span>kamal@technestindia.in</span>
                 <span>technestindiasolutions@gmail.com</span>
+            </div>
+            <div class="mb-3">
+                <div class="d-flex align-content-center gap-2">
+                   @include('layouts.address')
+                    <span>Address</span>
+                </div>
+                <span>11 12,near 5th cross road,MG PALAYA,sector 7</span>
+                <span>Bommanahalli,Bengaluru,Karnataka 560068</span>
             </div>
         </div>
       </div>
