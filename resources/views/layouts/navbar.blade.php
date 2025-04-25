@@ -15,7 +15,7 @@
                 <div class="cursor-pointer">
                     <a class="text-decoration-none text-white {{ request()->route()->uri == 'contact-us' ? 'active' : '' }}" aria-current="page" href="/contact-us">Contact Us</a>
                 </div>
-                <div class="cursor-pointer" type="button" data-bs-toggle="offcanvas"
+                <div class="cursor-pointer"  type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="bi bi-list fs-2 text-white"></i>
                 </div>
