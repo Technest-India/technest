@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-kamaraj_10042025_technestindia',
-        'version' => 'dev-kamaraj_10042025_technestindia',
-        'reference' => 'bece1641653c98ef7977c3686f98dbab6b5e67b7',
+        'pretty_version' => 'dev-technest_development',
+        'version' => 'dev-technest_development',
+        'reference' => '8e0f3fd22a722489897d541622c84980bec7d135',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -392,9 +392,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-kamaraj_10042025_technestindia',
-            'version' => 'dev-kamaraj_10042025_technestindia',
-            'reference' => 'bece1641653c98ef7977c3686f98dbab6b5e67b7',
+            'pretty_version' => 'dev-technest_development',
+            'version' => 'dev-technest_development',
+            'reference' => '8e0f3fd22a722489897d541622c84980bec7d135',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
