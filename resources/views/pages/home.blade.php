@@ -15,7 +15,7 @@
         <div class="background-top-section gradient-top-bottom start-gradient end-gradient">
             <div class="container mx-auto px-4 d-flex flex-wrap text-center flex-column justify-content-center">
                 <div class="describe-section py-5">
-                    <h1 class="fs-1 fw-bold mb-2 text-white">Fast, Free way to get experts</h1>
+                    <h1 class="fs-1 fw-bold mb-2">Fast, Free way to get experts</h1>
                     <div class="mb-2 text-white fs-3">Discover Top Experts in <span class="fw-bold">Chennai</span>
                     </div>
                     <div class="position-relative">
@@ -48,15 +48,15 @@
                 </div>
             </div>
         </div>
-        <div class="background-center-section container w-100 d-flex align-items-center p-3">
-            <div class="card" ng-repeat="category in home.homeCategoryList track by category.id"
+        <div class="background-center-section container w-100 d-flex align-items-center p-3 position-relative">
+            <div class="card shadow hover-zoom display-service-card" ng-repeat="category in home.homeCategoryList track by category.id"
                 style="background-color: @{{ category.backgroundColor }}">
                 <a class="d-block cursor-pointer text-decoration-none font-18px" href="@{{ category.url }}">
                     <h2 class="fs-bold text-center p-3 rounded font-19px text-black">@{{ category.title }}</h2>
                 </a>
                 <ul class="d-flex align-items-center list-container pt-4 pb-4">
                     <li class="d-flex align-items-center flex-wrap flex-column cursor-pointer" ng-repeat="list in category.lists track by $index">
-                        <a title="@{{ link.name }}" href="@{{ list.link }}" class="d-flex flex-column align-items-center cursor-pointer text-decoration-none text-black">
+                        <a title="@{{ link.name }}" href="@{{ list.link }}" class="d-flex flex-column align-items-center category-child-link cursor-pointer text-decoration-none text-black">
                             <img ng-src="@{{ list.image }}" height="50" width="50" class="duration-300 img-fluid category-image margin-bottom-5px" alt="Business Categories">
                             <div class="font-13px text-center d-flex justify-content-between link-title">
                                 @{{ list.name }}
